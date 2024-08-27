@@ -23,7 +23,7 @@ body{
     }
 }
 #encabezado{
-    background-image: url(images/encabezado.jpg);
+    background-image: url(encabezado.jpg);
     background-size: cover;
     height: 50px;
     width: 99vw;
@@ -47,7 +47,7 @@ body{
 }
 
 #botonmes{
-    background-image: url(images/botones.jpg);
+    background-image: url(botones.jpg);
     background-size: cover;
     
 }
