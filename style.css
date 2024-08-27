@@ -1,0 +1,356 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(41, 33, 79);
+    animation: color 12s ease infinite;
+}
+@keyframes color{
+    0%{
+        background-color: rgb(51, 51, 84);
+    }
+    25%{
+        background-color: rgb(45, 45, 125);
+    }
+    50%{
+        background-color: rgb(29, 29, 120);
+    }
+    75%{
+        background-color: rgb(20, 20, 102);
+    }
+    100%{
+        background-color: rgb(46, 41, 85);
+    }
+}
+#encabezado{
+    background-image: url(images/encabezado.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 99vw;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+/*-------------------------------------------------------------------*/
+
+#encabezado button{
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+    width: auto;
+    color: rgb(0, 0, 0);
+}
+#encabezado button:active{
+    background-color: aliceblue;
+    background-image: none;
+    
+}
+
+#botonmes{
+    background-image: url(images/botones.jpg);
+    background-size: cover;
+    
+}
+#botoninicio{
+    background-color: rgb(175, 94, 148);
+}
+#botoncorazon{
+    background-color: rgb(237, 80, 164);
+}
+#botonestado{
+    background-color: rgb(191, 125, 229);
+    animation: animc 10s 1s infinite ease;
+   
+    
+}
+@keyframes animc{
+    0%{
+        box-shadow: 0 0 1em rgb(255, 0, 0);
+    }
+    10%{
+        box-shadow: 0 0 1em rgb(211, 188, 56);
+    }
+    20%{
+        box-shadow: 0 0 1em rgb(51, 255, 0);
+    }
+    30%{
+        box-shadow: 0 0 1em rgb(0, 255, 136);
+    }
+    40%{
+        box-shadow: 0 0 1em rgb(0, 119, 255);
+    }
+    50%{
+        box-shadow: 0 0 1em rgb(4, 0, 255);
+    }
+    60%{
+        box-shadow: 0 0 1em rgb(98, 0, 255);
+    }  
+    70%{
+        box-shadow: 0 0 1em rgb(162, 0, 255);
+    }
+    80%{
+        box-shadow: 0 0 1em rgb(204, 0, 255);
+    }
+    90%{
+        box-shadow: 0 0 1em rgb(255, 0, 170);
+    }
+    100%{
+        box-shadow: 0 0 1em rgb(255, 0, 0);
+    }
+    
+}
+/*---------------------------------------------------------------------------------*/
+
+#contcord{
+    position: fixed;
+    left: 15px;
+    top: 110px;
+    width: 20px;
+    height: 300px;
+    border: 2px solid;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 0, 0);
+}
+#cordura{
+    transition: 1s;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(155, 19, 19);
+}
+#contcord:hover div:nth-of-type(1){
+background-color: rgb(47, 4, 4);
+height: 50%;                              /*------------------------------------------------------PORCENTAJE----------------------------*/
+
+}
+#contcord label{
+    color: aliceblue;
+    top: 140px;
+    position: absolute;
+    font-size: 16px;
+    transform: rotatez(-90deg);
+}
+#max{
+    position: fixed;
+    font-size: 16px;
+    top: 420px;
+    left: 18px;
+    color: aliceblue;
+}
+#corduralabel{
+    position: fixed;
+    font-size: 16px; 
+    top: 85px;
+    left: 10px;
+    color: aliceblue;
+}
+/*------------------------------------------------------------------------------*/
+
+#Inicio{
+    font-size: 22px;
+    background-color: rgb(146, 162, 190);
+    padding-left: 50px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border: 1px black;
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    border-radius: 25px;
+}
+#Inicio ul{
+    background-color: rgb(103, 134, 160);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+}
+/*---------------------------------------------------------------------*/
+
+#conttable label{
+    font-size: 24px;
+    color: rgb(172, 175, 177);
+    background-color: rgb(75, 32, 75);
+    padding: 2px;
+}
+#conttable{
+    position: relative;
+    left: 50vmax;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    height: auto;
+    width: 1300px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    
+}
+#conttable table{
+    width: 90%;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}    
+#conttable table th{
+    background-color: rgb(172, 143, 172);
+}
+#conttable table tr{
+    background-color: rgba(91, 54, 86, 0.745);
+    border-left: 5px solid black;
+    border-bottom: 1px black;
+    font-size: 18px;
+}
+/*-------------------------------------------------------*/
+
+#conttable2 label{
+    font-size: 24px;
+    color: rgb(172, 175, 177);
+    background-color: rgb(42, 32, 75);
+    padding: 2px;
+}
+#conttable2{
+    position: relative;
+    left: 50vmax;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    height: auto;
+    width: 1300px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+}
+#conttable2 table{
+    width: 90%;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+#conttable2 table th{
+    background-color: rgb(123, 145, 193);
+}
+#conttable2 table tr{
+    background-color: rgba(146, 159, 188, 0.745);
+    border-left: 5px solid black;
+    border-bottom: 1px black;
+    font-size: 18px;
+}
+/*----------------------------------------------------------------------------------*/
+
+#conttable3 label{
+    font-size: 24px;
+    color: rgb(172, 175, 177);
+    background-color: rgb(75, 75, 87);
+    padding: 2px;
+}
+#conttable3{
+    position: relative;
+    left: 50vmax;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    height: auto;
+    width: 1300px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+}
+#conttable3 table{
+    width: 90%;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+#conttable3 table th{
+    background-color: rgb(205, 205, 207);
+}
+#conttable3 table tr{
+    background-color: rgba(134, 134, 135, 0.745);
+    border-left: 5px solid black;
+    border-bottom: 1px black;
+    font-size: 18px;
+}
+/*---------------------------------------------------------------------------*/
+
+#botoncorazon1{
+    background-color: rgb(237, 80, 164);
+}
+#Corazones{
+    position: relative;
+    left: 50vmin;
+    top: 10vmax;
+    transform: translate(-50%-50%);
+    background-color: rgb(248, 213, 249);
+    width: 750px;
+    text-align: center;
+    height: 300px;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+#Corazones label{
+    font-size: 20px;
+    color: rgb(150, 0, 161);
+}
+#pie{
+    display: flex;
+    justify-content: space-around;
+}
+#pie label{
+    padding-top: 5px;
+    width: 80px;
+    height: 30px;
+    background-color: beige;
+}
+#Corazones table{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 700px;
+    height: 200px;
+    padding-left: 40px;
+    font-size: 16px;
+}
+.pi{
+    background-color: rgb(242, 138, 224);
+}
+.po{
+    background-color: rgb(184, 21, 157);
+}
+/*----------------------------------------------------------------------------------*/
+
+#Estado label{
+    font-size: 24px;
+    color: rgb(215, 213, 213);
+    background-color: rgb(52, 47, 47);
+    padding: 2px;
+}
+#Estado{
+    position: relative;
+    left: 50vmin;
+    top: 10vmax;
+    transform: translateY(-50%);
+    height: auto;
+    width: 800px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#Estado table{
+    width: 85%; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(218, 222, 224);
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(36, 50, 78);
+}

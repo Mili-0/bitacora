@@ -1,0 +1,994 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Bitacora personal</title>
+</head>
+<body>
+    <header>
+        <div id="encabezado">
+            <button onclick="Inicio()"  id="botoninicio"><strong>Inicio</strong></button>
+            <button onclick="Tablajun()" id="botonmes"><strong>Junio</strong></button>
+            <button onclick="Tablajul()" id="botonmes"><strong>Julio</strong></button>
+            <button onclick="Tablagost()" id="botonmes"><strong>Agosto</strong></button>
+            <button onclick="Corazones()" id="botoncorazon"><strong>Corazones</strong></button>
+            <button onclick="Estado()" id="botonestado"><strong>Estado de animo</strong></button>
+        </div>
+    </header>
+
+<label for="" id="corduralabel">Cordura</label>
+<div id="contcord">
+    <div id="cordura"><label for="">Presiona</label></div>
+</div>
+<label for="" id="max">Max</label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main id="content">
+
+<script>
+    Inicio();
+        function Inicio(){
+            document.getElementById("content").innerHTML = `
+             <div id="Inicio">
+                <p>Este es un apartado donde comentaré sobre mi, la vida y/o de la relación...</p>
+                <p>La cordura no es diaria, se actualiza de vez en cuando</p>
+                <h1>Comentarios personales</h1>
+                <ul>
+                    <li>Lo malo no es estar solo, sino sentirse solo</li>
+                    <li>Con el poder para tenerlo todo, pero debil para tomarlo</li>
+                    <li>Aprecio bastante los regalos que me das, aunque no se muestre en mi cara</li>
+                    <li>Se jodió todo</li>
+                    <li>Que es una verdadera amistad?</li>
+                    <li>He aprendido a querer un poco mas a mi cuerpo</li>
+                </ul>
+            </div>`
+        };
+        /*----------------------------------------------------------------------------------------------------------------*/
+        function Tablajun() {
+        document.getElementById("content").innerHTML = `
+                <div id="conttable">
+                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION JUNIO</strong></label>
+                    <table border="2px">
+                        <tr>
+                            <th>DIA</th>
+                            <th>ALMUERZO</th>
+                            <th>SNACK TARDE</th>
+                            <th>CENA</th>
+                            <th>SNACK NOCHE</th>
+                            <th>ESTADO FINAL</th>
+                        </tr>
+                        <tr>
+                            <td><strong>10 JUN</strong></td>
+                            <td>1 chuleta, una cantidad generosa de frijoles, 2 papas hervidas, fresco</td>
+                            <td>1 quesadilla, 1 yogurt</td>
+                            <td>Otro poco de frijoles, 2 webos</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>11 JUN</strong></td>
+                            <td>1 pechuga de pollo acompañado de 3 papas hervidas y una tortilla frita con quesillo, claramente con un poco de fresco</td>
+                            <td>1 bollito, 2 pedacitos de sándwiches que dejaron</td>
+                            <td>Josef me trajo un aburrita</td>
+                            <td>1 bollito</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>12 JUN</strong></td>
+                            <td>1 chuleta con algo de arroz, webos y un poquitín de frijoles; además de un panquesito random del refri</td>
+                            <td>1 yogurt, 1 semita y jugo</td>
+                            <td>Sopa instantánea</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>13 JUN</strong></td>
+                            <td>Baleadas caseras que contienen webo, además me comí unas limosnas de carne que dejaron por ahí y algo de jugo </td>
+                            <td>--</td>
+                            <td>Sin datos</td>
+                            <td>--</td>
+                            <td><strong>Sin datos</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>14 JUN</strong></td>
+                            <td>Unos “hot dogs” (pan blanco y el hot dog pequeño junto con cebolla, tomate etc.) que hice ayer en la noche</td>
+                            <td>--</td>
+                            <td>3 pedazos de pizza </td>
+                            <td>1 dona</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>15 JUN</strong></td>
+                            <td>Comí afuera después de la cita, fue un plato de arroz, frijoles, queso, chismol y chuleta con jugo de jamaica</td>
+                            <td>--</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Normal</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>16 JUN</strong></td>
+                            <td>Comí enchiladas que hizo mi mami</td>
+                            <td>--</td>
+                            <td>Irma hizo espagueti a la italiana</td>
+                            <td>1 bollito</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>17 JUN</strong></td>
+                            <td>Los mismos espaguetis de ayer  </td>
+                            <td>1 yogurt (estaba malo xds)</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>18 JUN</strong></td>
+                            <td>Una platada de espaguetis que hizo Irma </td>
+                            <td>--</td>
+                            <td>2 tortillas con quesillo fritas, un poco de frijoles y 1/6 de aguacate</td>
+                            <td>--</td>
+                            <td><strong>Deficiente</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>19 JUN</strong></td>
+                            <td>1 chocolate y lo que me diste de comer cuando nos vimos</td>
+                            <td>--</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Muy deficiente</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>20 JUN</strong></td>
+                            <td>1 nacatamal</td>
+                            <td>Papas hervidas</td>
+                            <td>Mucho pollo, un poco de comida desconocida que me dieron y 1/6 aguacate y 4 tortillas</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>21 JUN</strong></td>
+                            <td>Un choripan en la u (medio caro eh)</td>
+                            <td>Papas ensalzadas que compre</td>
+                            <td>Pollo</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>22 JUN</strong></td>
+                            <td>Carne en la freidora, arroz, algo de frijoles, ensalada con salsa</td>
+                            <td>--</td>
+                            <td>Frijoles, webo y arroz</td>
+                            <td>1 yogurt</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>23 JUN</strong></td>
+                            <td>Un pedazo de pollo, 2 pedacitos de carnes de ayer, frijoles, arroz y salsa</td>
+                            <td>1 yogurt</td>
+                            <td>Sopa instantánea</td>
+                            <td>1 pan con salsa</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>24 JUN</strong></td>
+                            <td>Algo de pollo, arroz y un nacatamal</td>
+                            <td>Granola</td>
+                            <td>Frijoles, plátano y hot dog</td>
+                            <td>1 pan que no me acuerdo su nombre</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>25 JUN</strong></td>
+                            <td>Hice catrachas</td>
+                            <td>--</td>
+                            <td>Unas pupusas que me dieron</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>26 JUN</strong></td>
+                            <td>Freí tajaditas de plátano junto con salsa, webo y hotdogs</td>
+                            <td>Yogurt vencido (confirmado)</td>
+                            <td>Frijoles, quesito y un poco de encurtido picante (yo el fav de dios)</td>
+                            <td>1 pan</td>
+                            <td><strong>Muy satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>27 JUN</strong></td>
+                            <td>Arroz, sardinas y frijoles a mi estilo</td>
+                            <td>Churro</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>28 JUN</strong></td>
+                            <td>Una burrita en la u</td>
+                            <td>--</td>
+                            <td>Unos “tacos” mexicanos pero no estaban tan buenos</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>29 JUN</strong></td>
+                            <td>Desayuné webo, plátano y frijoles que hizo Irma</td>
+                            <td>No es snack pero “almorcé” bien tarde un pollo, frijoles y arroz</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>30 JUN</strong></td>
+                            <td>Una chuleta que se compró pero comimos bien tarde</td>
+                            <td>--</td>
+                            <td>Un postre bien random pero rico (estaba empalagoso)</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                    </table>
+                </div>`
+        };
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+        function Tablajul(){
+            document.getElementById("content").innerHTML = `
+                <div id="conttable2">
+                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION JULIO</strong></label>
+                    <table border="2px">
+                        <tr>
+                            <th>DIA</th>
+                            <th>ALMUERZO</th>
+                            <th>SNACK TARDE</th>
+                            <th>CENA</th>
+                            <th>SNACK NOCHE</th>
+                            <th>ESTADO FINAL</th>
+                        </tr>
+                        <tr>
+                            <td><strong>1 JUL</strong></td>
+                            <td>Baleadas caseras</td>
+                            <td>--</td>
+                            <td>Sopa instantánea y un sándwich que me dieron</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>2 JUL</strong></td>
+                            <td>Carne de res, arroz, medio sándwich y el postre que no se su nombre</td>
+                            <td>--</td>
+                            <td>Unos “hotdogs” caseros</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>3 JUL</strong></td>
+                            <td>Una platada de arroz con sardinas, plátano y salsa</td>
+                            <td>Pastel</td>
+                            <td>Un sándwich que dejaron</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>4 JUL</strong></td>
+                            <td>Webo con pan, arroz, tocino y salsa</td>
+                            <td>Pastel y postre</td>
+                            <td>Arroz, frijoles y plátano</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>5 JUL</strong></td>
+                            <td>Cantidad ingente de arroz con salsa y carne </td>
+                            <td>--</td>
+                            <td>Palomitas en el cine</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                         <tr>
+                            <td><strong>6 JUL</strong></td>
+                            <td>Pizza en la cita y helado</td>
+                            <td>--</td>
+                            <td>Arroz, frijoles</td>
+                            <td>Pastel</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>7 JUL</strong></td>
+                            <td>Pasta</td>
+                            <td>Pastel</td>
+                            <td>Pasta de la tarde</td>
+                            <td>1 tamalito</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>8 JUL</strong></td>
+                            <td>2 tamalitos, arroz y sardina</td>
+                            <td>--</td>
+                            <td>Arroz, frijoles y queso</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>9 JUL</strong></td>
+                            <td>Chilaquiles sin pollo, frijoles, tocino y jugo de bolsita</td>
+                            <td>Pastel</td>
+                            <td>Irma hizo un webo en torta, frijoles, plátano, lo que deje del almuerzo y jugo</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>10 JUL</strong></td>
+                            <td>Arroz y sardina</td>
+                            <td>Pastel</td>
+                            <td>Arroz y un pedazo de carne que hice en la tarde</td>
+                            <td>Pastel</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>11 JUL</strong></td>
+                            <td>Almorcé webo, arroz, papas hervidas y tortillas fritas</td>
+                            <td>--</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>12 JUL</strong></td>
+                            <td>Me comí un sándwich casero en la u</td>
+                            <td>--</td>
+                            <td>Pastelitos que compraron</td>
+                            <td>Churro</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>13 JUL</strong></td>
+                            <td>Desayuné webo y arroz que había; “almorcé” una horchata y un batido de piña</td>
+                            <td>--</td>
+                            <td>Atol</td>
+                            <td>1 minimo</td>
+                            <td><strong>Hambriento</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>14 JUL</strong></td>
+                            <td>Carne molida ensalzada, con verduras y arroz</td>
+                            <td>1 pingüino y jugo</td>
+                            <td>Sopa magi</td>
+                            <td>--</td>
+                            <td><strong>Deficiente</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>15 JUL</strong></td>
+                            <td>"Enchiladas" caseras con papas, arroz, carne asada picada, la salsita y un juguito</td>
+                            <td>Granola</td>
+                            <td>Sopa instantanea y sopa magi de ayer</td>
+                            <td>pan</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>16 JUL</strong></td>
+                            <td>Comi una ensalada de papas ensalsada y arroz donde abuela</td>
+                            <td>Pasas y maní</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>17 JUL</strong></td>
+                            <td>Tortilla con quesillo junto con webo y tocino</td>
+                            <td>Pastel</td>
+                            <td>2 hot dogs grandes, platano, tortilla</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>18 JUL</strong></td>
+                            <td>--</td>
+                            <td>Pan de minimo</td>
+                            <td>Josef compró unos panqueques de wendys y venian con webo y frijoles</td>
+                            <td>--</td>
+                            <td><strong>No tenia hambre</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>19 JUL</strong></td>
+                            <td>Tortillas fritas a modo de enchilada con carne molida, arroz y salsa</td>
+                            <td>Pan</td>
+                            <td>Pan molde con la carne que sobró y queso de sandwich</td>
+                            <td>--</td>
+                            <td><strong>Satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>20 JUL</strong></td>
+                            <td>Pasta</td>
+                            <td>--</td>
+                            <td>Irma y josef hicieron como un estofado con carne y verduras pero bien rico</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>21 JUL</strong></td>
+                            <td>la misma comida que sobró de ayer</td>
+                            <td>--</td>
+                            <td>Pasta de ayer</td>
+                            <td>--</td>
+                            <td><strong>Muy bien</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>22 JUL</strong></td>
+                            <td>Tortilla con quesillo, webo y platano ademas me hice una carnita frita</td>
+                            <td>--</td>
+                            <td>Sin datos</td>
+                            <td>--</td>
+                            <td><strong>Sin datos</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>23 JUL</strong></td>
+                            <td>Josef hizo una carnita de res y eso comi junto con arroz y frijoles</td>
+                            <td>--</td>
+                            <td>Lo mismo pero sin los frijoles</td>
+                            <td>Semita</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>24 JUL</strong></td>
+                            <td>Arroz y la carne de ayer</td>
+                            <td>Dulces</td>
+                            <td>Baleadas</td>
+                            <td>--</td>
+                            <td><strong>Nada mal</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>25 JUL</strong></td>
+                            <td>Tortilla con quesillo y un pedazo de carne de res que aun queda</td>
+                            <td>Galleta, Granola</td>
+                            <td>Cereal</td>
+                            <td>Churro</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>26 JUL</strong></td>
+                            <td>1 pan de queso en la uni (no tenia mucha hambre)</td>
+                            <td>--</td>
+                            <td>Arroz con sardina</td>
+                            <td>--</td>
+                            <td><strong>Ni bien ni mal</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>27 JUL</strong></td>
+                            <td>Desayuné baleadas que compró Irma</td>
+                            <td>"Almorcé" pizza con piña</td>
+                            <td>Un webo con pan molde y jamon</td>
+                            <td>--</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>28 JUL</strong></td>
+                            <td>Unos frijoles que habia hecho Josef ademas de una comida que llevaba en el refri como 5 dias y un pedazo de pollo</td>
+                            <td>--</td>
+                            <td>Cereal</td>
+                            <td>Pan</td>
+                            <td><strong>Meh</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>29 JUL</strong></td>
+                            <td>Sardinas y mucho arroz</td>
+                            <td>Palomitas, Pan moldes</td>
+                            <td>Pollo</td>
+                            <td>Pan Moldes</td>
+                            <td><strong>Hambre</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>30 JUL</strong></td>
+                            <td>Baleadas caseras y jugo</td>
+                            <td>Galleta</td>
+                            <td>Frijoles</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>31 JUL</strong></td>
+                            <td>Una chuleta que hizo Irma ayer, frijoles, arros y papas hervidas</td>
+                            <td>Pan</td>
+                            <td>Platano, frijoles y arroz</td>
+                            <td>--</td>
+                            <td><strong>Muy bien</strong></td>
+                        </tr>
+                    </table>
+                </div>`
+        };
+   /*-----------------------------------------------------------------------------------------------------------------*/
+         function Tablagost() {
+                document.getElementById("content").innerHTML = `
+                <div id="conttable3">
+                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION AGOSTO</strong></label>
+                    <table border="2px">
+                        <tr>
+                            <th>DIA</th>
+                            <th>ALMUERZO</th>
+                            <th>SNACK TARDE</th>
+                            <th>CENA</th>
+                            <th>SNACK NOCHE</th>
+                            <th>ESTADO FINAL</th>
+                        </tr>
+                        <tr>
+                            <td><strong>1 AGOST</strong></td>
+                            <td>Pasta que hice</td>
+                            <td>--</td>
+                            <td>Pasta de la tarde</td>
+                            <td>--</td>
+                            <td><strong>Bien lleno</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>2 AGOST</strong></td>
+                            <td>Espaguetty que hizó Irma</td>
+                            <td>Churro</td>
+                            <td>Frijoles, papas hervidadas con queso</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>3 AGOST</strong></td>
+                            <td>Chapsuy en la casa de abuela</td>
+                            <td>1 manzana, maní, pasas, sandia, banana, pan</td>
+                            <td>Frijoles y webo</td>
+                            <td>--</td>
+                            <td><strong>Bastante satisfecho</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>4 AGOST</strong></td>
+                            <td>Tortilla con quesillo y webo</td>
+                            <td>--</td>
+                            <td>"Cené" palomitas en el cine</td>
+                            <td>2 pan molde con salsa</td>
+                            <td><strong>Algo deficiente</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>5 AGOST</strong></td>
+                            <td>Almorcé espaguetty que aun queda</td>
+                            <td>--</td>
+                            <td>Sopa instantanea</td>
+                            <td>Pan molde</td>
+                            <td><strong>Aceptable</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>6 AGOST</strong></td>
+                            <td>Frijoles liquados con carnita</td>
+                            <td>--</td>
+                            <td>Sopa instantanea</td>
+                            <td>--</td>
+                            <td><strong>Nada mal</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>7 AGOST</strong></td>
+                            <td>Una burrita en la u (sabia dlv)</td>
+                            <td>--</td>
+                            <td>Sandwiches caseros</td>
+                            <td>--</td>
+                            <td><strong>Muy lleno</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>8 AGOST</strong></td>
+                            <td>Choripan en la u</td>
+                            <td>Pan molde tostado con margarina y luego churro con salsa y jalapeño</td>
+                            <td>Sopa instantanea</td>
+                            <td>--</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>9 AGOST</strong></td>
+                            <td>Arroz y sardinas mientras iba en el bus</td>
+                            <td>--</td>
+                            <td>Atol</td>
+                            <td>--</td>
+                            <td><strong>Deficiente</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>10 AGOST</strong></td>
+                            <td>Mama hizo una carne con verduras ensalsadas</td>
+                            <td>Minimo, dona</td>
+                            <td>Lo mismo del almuerzo</td>
+                            <td>--</td>
+                            <td><strong>Nada mal</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>11 AGOST</strong></td>
+                            <td>Pizza de un restaurante nuevo</td>
+                            <td>dona</td>
+                            <td>Webo y pan molde tostado con margarina</td>
+                            <td>--</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>12 AGOST</strong></td>
+                            <td>Tortillas fritas ensalsadas</td>
+                            <td>--</td>
+                            <td>Carne que preparé en la tarde y algo extra</td>
+                            <td></td>
+                            <td><strong></strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>13 AGOST</strong></td>
+                            <td>Tortillas con quesillo, frijoles y webo porque aun no estaba el pollo</td>
+                            <td>--</td>
+                            <td>Mi hermano repreparó el pollo para mañana asi que comi arroz, frijoles y un poquitin de pollo que dejó</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>14 AGOST</strong></td>
+                            <td>Comi el pollo de ayer junto con arroz</td>
+                            <td>--</td>
+                            <td>Mi papa llegó entonces compró costilla</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>15 AGOST</strong></td>
+                            <td>Almorcé en la colonia junto con mis padres, comi estofado, pasta ensalsada y algo mas</td>
+                            <td>--</td>
+                            <td>Compraron unas alitas</td>
+                            <td>--</td>
+                            <td><strong>Muy lleno</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>16 AGOST</strong></td>
+                            <td>1 pan de minimo en la u</td>
+                            <td>--</td>
+                            <td>Frijolse, papas hervidas y una carnita que sobró del 14</td>
+                            <td>1 panqueque que habia por ahi</td>
+                            <td><strong>Muy lleno</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>17 AGOST</strong></td>
+                            <td>Hice unos chilaquiles sin carne</td>
+                            <td>--</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>18 AGOST</strong></td>
+                            <td>Josef me trajo unos chilaquiles pero si tenian carne y queso jaja</td>
+                            <td>--</td>
+                            <td>Chilaquiles que hice que aun quedaban</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>19 AGOST</strong></td>
+                            <td>Webo con tocino, queso y pan molde tostado</td>
+                            <td>1 baleada a medio comer de la refri</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>20 AGOST</strong></td>
+                            <td>Tortillas con quesillo no fitas</td>
+                            <td>1 poco que hice</td>
+                            <td>--</td>
+                            <td>Cereal</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>21 AGOST</strong></td>
+                            <td>1 poco de pollo asado y 2 tortillas</td>
+                            <td>--</td>
+                            <td>Cereal</td>
+                            <td>--</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>22 AGOST</strong></td>
+                            <td>arroz y sardinas</td>
+                            <td>--</td>
+                            <td>Webo y pan molde</td>
+                            <td>--</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>23 AGOST</strong></td>
+                            <td>1 baleada que compro irma</td>
+                            <td>1 pedazo de pollo</td>
+                            <td>Una carnita que me dieron, sopa instantanea y tambien probe el sushi</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>24 AGOST</strong></td>
+                            <td>Pollito y tortilla cuando llegamos a cane</td>
+                            <td>Estuve picando pedacitos de carne mientras asaba</td>
+                            <td>Carne, frijoles y poco mas, ademas de un galleta que tenia</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>25 AGOST</strong></td>
+                            <td>Un poco de carne de ayer y arroz</td>
+                            <td>Pan molde con pasta de carne</td>
+                            <td>Mi hermano compró una hamburguesa</td>
+                            <td>1 pan</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>26 AGOST</strong></td>
+                            <td>Frijoles, arroz y un pollo asado</td>
+                            <td>--</td>
+                            <td></td>
+                            <td>La baeada que nos dió Josef</td>
+                            <td><strong>Bien</strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong>27 AGOST</strong></td>
+                            <td>Hice pasta</td>
+                            <td>Piña congelada</td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong> AGOST</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
+                        </tr>
+                         <tr>
+                            <td><strong> AGOST</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
+                        </tr>
+
+
+                        
+                    </table>
+                </div>`
+        };
+        /*----------------------------------------------------------------------------------------------------------------*/
+
+        function Corazones() {
+            document.getElementById("content").innerHTML = `
+                <div id="Corazones">
+                    <label for=""><strong>CORAZONES!</strong></label>
+                    <table id="tablaC"></table>
+                    <div id="pie">
+                        <button onclick="corajul()" id="botoncorazon1"><strong>Julio</strong></button>
+                        <button onclick="coragost()" id="botoncorazon1"><strong>Agosto</strong></button>
+                        <button onclick="corasept()" id="botoncorazon1"><strong>Septiembre</strong></button>
+                    </div>
+                </div>`
+
+        };
+                 corajul();
+                    function corajul(){
+                            document.getElementById("tablaC").innerHTML = `
+                        <table>
+                                <tr>
+                                    <th><strong>DOMINGO</strong></th>
+                                    <th><strong>LUNES</strong></th>
+                                    <th><strong>MARTES</strong></th>
+                                    <th><strong>MIERCOLES</strong></th>
+                                    <th><strong>JUEVES</strong></th>
+                                    <th><strong>VIERNES</strong></th>
+                                    <th><strong>SABADO</strong></th>     
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td class="pi">4</td>
+                                    <td class="pi">5</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td class="pi">13 </td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td class="po">15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td class="pi">19</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="pi">21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td class="po">27</td>
+                                </tr>
+                                <tr>
+                                    <td class="po">28</td>
+                                    <td>29</td>
+                                    <td class="po">30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>`
+                    };
+                    function coragost(){
+                            document.getElementById("tablaC").innerHTML = `
+                        <table>
+                                <tr>
+                                    <th><strong>DOMINGO</strong></th>
+                                    <th><strong>LUNES</strong></th>
+                                    <th><strong>MARTES</strong></th>
+                                    <th><strong>MIERCOLES</strong></th>
+                                    <th><strong>JUEVES</strong></th>
+                                    <th><strong>VIERNES</strong></th>
+                                    <th><strong>SABADO</strong></th>     
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="pi">8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td class="pi">12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td class="pi">15</td>
+                                    <td>16</td>
+                                    <td class="pi">17</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td class="po">20</td>
+                                    <td class="pi">21</td>
+                                    <td class="po">22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td class="pi">26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                </tr>
+                            </table>`
+                    };
+                    function corasept(){
+                            document.getElementById("tablaC").innerHTML = `
+                        <table>
+                                <tr>
+                                    <th><strong>DOMINGO</strong></th>
+                                    <th><strong>LUNES</strong></th>
+                                    <th><strong>MARTES</strong></th>
+                                    <th><strong>MIERCOLES</strong></th>
+                                    <th><strong>JUEVES</strong></th>
+                                    <th><strong>VIERNES</strong></th>
+                                    <th><strong>SABADO</strong></th>     
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>`
+                    };
+        /*-----------------------------------------------------------------------------------------------------------*/
+        function Estado() {
+            document.getElementById("content").innerHTML = `
+            <div id="Estado">
+                <label for=""><strong>ESTADO EMOCIONAL EN MOMENTOS ESPECIFICOS</strong></label>
+                <table border="2px">
+                    <tr>
+                        <th><strong>MOMENTO</strong></th>
+                        <th><strong>ESTADO FISICO</strong></th>
+                        <th><strong>ESTADO MENTAL</strong></th>
+                    </tr>
+                    <tr>
+                        <td>1 JUL-6 JUL</td>
+                        <td>Normal</td>
+                        <td>Supremamente decaído y pensante sobre la relación</td>
+                    </tr>
+                    <tr>
+                        <td>13 JUL</td>
+                        <td>Un poco enfermo de gripe</td>
+                        <td>Me dió algo raro que me puso ligeramente sumiso y algo hot</td>
+                    </tr>
+                    <tr>
+                        <td>18 JUL</td>
+                        <td>Terminé el dia hot</td>
+                        <td>Fue un lindo día donde estuviste un poco mas proactiva y en general bien</td>
+                    </tr>
+                     <tr>
+                        <td>23-26 JUL</td>
+                        <td>Cansado</td>
+                        <td>Ligeramente agobiado</td>
+                    </tr>
+                </table>
+            </div>`
+        };
+</script>
+</main>
+
+</body>
+</html>
