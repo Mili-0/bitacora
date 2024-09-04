@@ -33,6 +33,7 @@ body{
 }
 /*-------------------------------------------------------------------*/
 
+
 #encabezado button{
     border-radius: 20px;
     font-size: 20px;
@@ -40,10 +41,10 @@ body{
     width: auto;
     color: rgb(0, 0, 0);
 }
-#encabezado button:active{
+#encabezado button:focus{
     background-color: aliceblue;
     background-image: none;
-    
+    color: blueviolet;
 }
 
 #botonmes{
@@ -120,7 +121,7 @@ body{
 }
 #contcord:hover div:nth-of-type(1){
 background-color: rgb(47, 4, 4);
-height: 50%;                              /*------------------------------------------------------PORCENTAJE----------------------------*/
+height: 70%;                              /*------------------------------------------------------PORCENTAJE----------------------------*/
 
 }
 #contcord label{
@@ -167,6 +168,14 @@ height: 50%;                              /*------------------------------------
     padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 20px;
+}
+#link{
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+}
+#link:focus{
+    color: blueviolet;
 }
 /*---------------------------------------------------------------------*/
 
