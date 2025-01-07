@@ -2,25 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(41, 33, 79);
+    background: url(images/fondo.png) no-repeat center center fixed;
+    background-size: cover;
     animation: color 12s ease infinite;
-}
-@keyframes color{
-    0%{
-        background-color: rgb(51, 51, 84);
-    }
-    25%{
-        background-color: rgb(45, 45, 125);
-    }
-    50%{
-        background-color: rgb(29, 29, 120);
-    }
-    75%{
-        background-color: rgb(20, 20, 102);
-    }
-    100%{
-        background-color: rgb(46, 41, 85);
-    }
+    font-size: 20px;
 }
 #encabezado{
     background-image: url(images/encabezado.png);
@@ -31,7 +16,7 @@ body{
     padding-left: 20px;
     position: relative;
 }
-/*-------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------encabezado---------------------------------*/
 
 
 #encabezado button{
@@ -40,6 +25,7 @@ body{
     padding: 5px;
     width: auto;
     color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 #encabezado button:focus{
     background-color: aliceblue;
@@ -48,12 +34,13 @@ body{
 }
 
 #botonmes{
-    background-image: url(images/botones.png);
+    background: url(images/botones.png) no-repeat center center;
     background-size: cover;
     
 }
 #botoninicio{
-    background-color: rgb(175, 94, 148);
+    background: url(images/fondoinicio.jpg) no-repeat right center;
+    background-size: cover;
 }
 #botoncorazon{
     background-color: rgb(237, 80, 164);
@@ -100,7 +87,11 @@ body{
     }
     
 }
-/*---------------------------------------------------------------------------------*/
+#botonanime{
+    background:url(images/fondoanime.jpg) no-repeat right center;
+    background-size: cover;
+}
+/*---------------------------------------------------------------------------------cordura--------------------------------*/
 
 #contcord{
     position: fixed;
@@ -111,6 +102,7 @@ body{
     border: 2px solid;
     border-radius: 20px;
     border: 2px solid rgb(255, 0, 0);
+    cursor: pointer;
 }
 #cordura{
     transition: 1s;
@@ -145,7 +137,7 @@ height: 70%;                              /*------------------------------------
     left: 10px;
     color: aliceblue;
 }
-/*------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------primera pagina----------------------*/
 
 #Inicio{
     font-size: 22px;
@@ -169,15 +161,60 @@ height: 70%;                              /*------------------------------------
     padding-bottom: 5px;
     margin-right: 20px;
 }
+#metas{
+    margin-top: 100px;
+}
+#interrogacion{
+    position: absolute;
+    margin: 0px;
+    height: 40px;
+    width: 40px;
+    font-size: 1px;
+    background-color: rgb(42, 82, 115);
+    border-radius: 50%;
+    transition: 1s;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#interrogacion div{
+    transition: 1s;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#interrogacion:hover div:nth-child(1){
+    height: 200px;
+    width: 800px;
+    transform: translateY(50px);
+    font-size: 20px;
+    border-radius: 0%;
+    background-color: rgb(42, 82, 115);
+    transition: 1s;
+}
+#faltas{
+    margin-top: 100px;
+}
+#rojo{
+    color: rgb(151, 21, 21);
+}
+#amarillo{
+    color: rgb(179, 173, 45);
+}
+#verde{
+    color: rgb(16, 98, 16);
+}
 #link{
     color: black;
     font-size: 22px;
     text-decoration: none;
 }
+#link:hover{
+    color:red;
+}
 #link:focus{
     color: blueviolet;
 }
-/*---------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------tablas-------*/
 
 #conttable label{
     font-size: 24px;
@@ -286,10 +323,14 @@ height: 70%;                              /*------------------------------------
     border-bottom: 1px black;
     font-size: 18px;
 }
-/*---------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------corazones----------------------------------*/
 
-#botoncorazon1{
+.botoncorazon1{
     background-color: rgb(237, 80, 164);
+    cursor: pointer;
+}
+.botoncorazon1:focus{
+    color: rgb(57, 18, 228);
 }
 #Corazones{
     position: relative;
@@ -365,4 +406,232 @@ height: 70%;                              /*------------------------------------
     text-align: center;
     margin-top: 20px;
     background-color: rgb(36, 50, 78);
+}
+
+/*------------------------------------------------------------------------------toda la parte del top 3----------------*/
+#conttop{
+    position: absolute;
+    width: 600px;
+    height: 150px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+    margin-top: 30px;
+    margin-left: 60px;
+    border: 3px dashed rgb(43, 43, 130);
+}
+#conttop label{
+    background-color: rgb(154, 152, 152);
+    text-align: center;
+    padding: 2px 5px 2px 5px;
+}
+#tops{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: rgba(47, 52, 97, 0.858);
+    display: flex;
+    justify-content: space-around;
+    height: 110px;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#tops div{
+    padding: 5px 5px 0px 5px;
+    height: 110px;
+    width: auto;
+    transition: 2s;
+    position: relative;
+    font-family: verdana;
+    font-size: medium;
+}
+#tops:hover :nth-child(1){
+    height: 60%;
+    background-color: rgb(192,192,192);
+    color: black;
+    border-radius: 6px;
+}
+#tops:hover :nth-child(2){
+    height: 80px;
+    background-color: rgb(255, 215, 0);
+    color: black;
+    border-radius: 6px;
+}
+#tops:hover :nth-child(3){
+    height: 40px;
+    background-color: rgb(205, 127, 50);
+    color: black;
+    border-radius: 6px;
+}
+
+/*-----------------------------------------------------------------------------detallado del top 3----------------------------------*/
+#detallado{
+    background-color: rgb(54, 80, 122);
+    height: auto;
+    width: 300px;
+    padding: 30px 20px 30px 20px;
+    position: absolute;
+    left: 50px;
+    margin-top: 30px;
+    left: 70%;
+  
+}
+#uno{
+    height: 300px;
+    width: 300px;
+    background: url(images/rakudai.jpg) no-repeat center center;
+    background-size: cover;
+}
+#dos{
+    height: 300px;
+    width: 300px;
+    background: url(images/nogame.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: 50px;
+}
+#tres{
+    height: 300px;
+    width: 300px;
+    background: url(images/clover.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+/*--------------------------------------------------------------------------------menciones honorificas---------------------------*/
+#contlista{
+    height: auto;
+    width: 750px;
+    background-color: rgb(53, 72, 113);
+    padding: 30px 40px 30px 40px;
+    top: 55%;
+    position: absolute;
+    margin-left: 60px;
+    text-align: center;
+    font-family: verdana;
+    font-size: medium;
+}
+#contlista label{
+    background-color: rgb(158, 153, 153);
+    text-align: center;
+    padding: 2px 5px 2px 5px;
+    animation: animac 20s infinite ease;
+    font-size: 20px;
+}
+@keyframes animac{
+    0%{
+        box-shadow: 0 0 1em rgb(255, 0, 0);
+    }
+    10%{
+        box-shadow: 0 0 1em rgb(211, 188, 56);
+    }
+    20%{
+        box-shadow: 0 0 1em rgb(51, 255, 0);
+    }
+    30%{
+        box-shadow: 0 0 1em rgb(0, 255, 136);
+    }
+    40%{
+        box-shadow: 0 0 1em rgb(0, 119, 255);
+    }
+    50%{
+        box-shadow: 0 0 1em rgb(4, 0, 255);
+    }
+    60%{
+        box-shadow: 0 0 1em rgb(98, 0, 255);
+    }  
+    70%{
+        box-shadow: 0 0 1em rgb(162, 0, 255);
+    }
+    80%{
+        box-shadow: 0 0 1em rgb(204, 0, 255);
+    }
+    90%{
+        box-shadow: 0 0 1em rgb(255, 0, 170);
+    }
+    100%{
+        box-shadow: 0 0 1em rgb(255, 0, 0);
+    }
+    
+}
+
+/*------------------------------------------------------------------imagen de menciones honorificas-------------------------------*/
+#contlista ul{
+    margin-top: 30px;
+}
+.preview{
+    height: 20px;
+    width: 40px;
+    background-color: rgb(97, 129, 159);
+    margin-left: 600px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.preview div{
+    height: 20px;
+    width: 20px;
+    margin-left: 50px;
+    border-radius: 20%;
+    transition: 1.5s;
+    transition-delay: 0.2s;
+}
+#preview1:hover :nth-child(n){
+    background: url(images/bakatest.jpg) no-repeat center top;
+    background-size: cover;
+    transform: translatex(200px) scale(10.0);
+}
+#preview2:hover :nth-child(n){
+    background: url(images/sousou.jpg) no-repeat center center;
+    background-size: cover;
+    transform: translatex(200px) scale(10.0);
+}
+#preview3:hover :nth-child(n){
+    background: url(images/fate.jpg) no-repeat center center;
+    background-size: cover;
+    transform: translatex(200px) scale(10.0);
+}
+#preview4:hover :nth-child(n){
+    background: url(images/karakai.jpg) no-repeat center center;
+    background-size: cover;
+    transform: translatex(200px) scale(10.0);
+}
+#preview5:hover :nth-child(n){
+    background: url(images/shimoneta.jpg) no-repeat center top;
+    background-size: cover;
+    transform: translatex(200px) scale(10.0);
+}
+#preview6:hover :nth-child(n){
+    background: url(images/mushoku.jpg) no-repeat center center;
+    background-size: cover;
+    transform: translatex(200px) scale(10.0);
+}
+#preview7:hover :nth-child(n){
+    background: url(images/april.jpg) no-repeat center top;
+    background-size: cover;
+    transform: translatex(200px) scale(10.0);
+}
+#preview8:hover :nth-child(n){
+    background: url(images/rezero.jpg) no-repeat center center;
+    background-size: cover;
+    transform: translatex(200px) scale(10.0);
+}
+
+/*--------------------------------------------------------------------------------otros animes------------------------------*/
+#contotros{
+    height: auto;
+    width: 750px;
+    background-color: rgb(137, 56, 159);
+    padding: 30px 40px 30px 40px;
+    top: 150%;
+    position: absolute;
+    margin-left: 60px;
+    text-align: center;
+    font-family: verdana;
+    font-size: medium;
+}
+#contotros label{
+    background-color: rgb(158, 153, 153);
+    text-align: center;
+    padding: 2px 5px 2px 5px;
+    font-size: 20px;
 }

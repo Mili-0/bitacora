@@ -10,11 +10,12 @@
     <header>
         <div id="encabezado">
             <button onclick="Inicio()"  id="botoninicio"><strong>Inicio</strong></button>
-            <button onclick="Tabla1()" id="botonmes"><strong>Septiembre</strong></button>
-            <button onclick="Tabla2()" id="botonmes"><strong>Octubre</strong></button>
-            <button onclick="Tabla3()" id="botonmes"><strong>Noviembre</strong></button>
+            <button onclick="Tabla1()" id="botonmes"><strong>Enero</strong></button>
+            <button onclick="Tabla2()" id="botonmes"><strong>Febrero</strong></button>
+            <button onclick="Tabla3()" id="botonmes"><strong>Marzo</strong></button>
             <button onclick="Corazones()" id="botoncorazon"><strong>Corazones</strong></button>
             <button onclick="Estado()" id="botonestado"><strong>Estado de animo</strong></button>
+            <button onclick="Anime()" id="botonanime"><strong>Catalogo anime</strong></button>
         </div>
     </header>
 
@@ -30,14 +31,10 @@
 
 
 
-<tr>
-    <td><strong></strong></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td><strong></strong></td>
-</tr>
+
+
+
+
 
 
 
@@ -54,20 +51,57 @@
         function Inicio(){
             document.getElementById("content").innerHTML = `
              <div id="Inicio">
-                <p>Este es un apartado donde comentaré sobre mi, la vida y/o de la relación...</p>
-                <p>La cordura no es diaria, se actualiza de vez en cuando</p>
+                <p style="font-size: 26px;">Este es un apartado donde comentaré sobre mi, la vida y/o de la relación...</p>
                 <h1>Comentarios personales</h1>
                 <ul>
+                    <li><strong>Hoy soy mejor que ayer y mañana seré mejor que hoy</strong></li>
                     <li>Lo malo no es estar solo, sino sentirse solo</li>
-                    <li>Con el poder para tenerlo todo, pero debil para tomarlo</li>
-                    <li>Aprecio bastante los regalos que me das, aunque no se muestre en mi cara</li>
-                    <li>He aprendido a querer un poco mas a mi cuerpo, no obstante, a veces me agobia la gente</li>
+                    <li>Estoy mas femboy</li>
+                    <li>Quiero tener tetitas mas sensibles</li>
                     <li>Amar es apreciar estar con alguien, sentir cercania y confianza hacia esa persona a pesar de la adversidad</li>
-                    <li>Pero para que alguien se sienta amado es necesario tener pasion...</li>
-                    <li>Hoy soy mejor que ayer y mañana seré mejor que hoy</li>
-                    <li>Pinche Nestum no me ayudó mucho</li>
-                    <li>A nuestra relacion le falta algo muy importante: la sazón...</li>
+                    <li>Quiero que me penetres de nuevo</li>
+                    <li>Dejar pasar las molestias es lo mejor que he de hacer</li>
                 </ul>
+
+                <div id="linea"></div>
+
+                <div id="metas">
+                    <label for=""><strong>METAS QUE ESPERO CUMPLIR A CORTO O LARGO PLAZO</strong></label>
+                    <ul>
+                        <li>Mejorar mi corte de cabello</li>
+                        <li>Ser aun mas femboy</li>
+                        <li>Evidentemente pasar mis clases y tener mas amistades</li>
+                        <li>Ser menos racional con mis emociones y aprender a aceptarlas</li>
+                        <li>Quiero ser mas perverso, o eso me lo dice mi subconsiente</li>
+                    </ul>
+                </div>
+
+                <div id="interrogacion">
+                    <div>
+                        <p>Falta verde: Una simple molestia secilla que te digo a motivo de enseñanza o aprendizaje mutuo</p>
+                        <p>Falta amarilla: Un motivo de mi molestia por diversas razones que posiblemente con el tiempo lo asuma</p>
+                        <p>Falta roja: Una falta completamente insensata hacia mi persona, con un motivo absurdo que llevó a una discusion y mi enojo total hacia ti</p>
+                    </div>
+                </div>
+
+                <div id="faltas">
+                    <label for=""><strong>FALTAS QUE ME HAS HECHO EN LA RELACION</strong></label>
+                    <ul>
+                        <li id="verde">Resulta que hay una posible razon por la que no te amo tanto como tu a mi, talvez son los pequeños detallitos juguetones que te dan nuevas experiencias y que tu casi no me has dado</li>
+                        <li id="verde">Lastimosamente cuando estoy mal y posiblemente lo notes no haces mucho para ayudarme</li>
+                        <li id="verde">Agradeceria que dejaras de estarte saliendo de la conversacion, asi pierdo el interes, mejor dime que no te interesa o que estas en otra cosa</li>
+                        <li id="verde">Seria bueno que dejaras de asumir cosas sin pensarlas antes</li>
+
+                        <li id="amarillo">Ironicamente aunque el rol haya sido TU espacio de amor nunca fuiste tan buena como el interes que yo   te ponia, eso desde el principio de todo</li>
+                        <li id="amarillo">Seria bueno que me dijeras mas comentarios picantones en persona o que si me pides un outfit si me digas tu opinion y no solo la dejes en tu mente</li>
+
+                        <li id="rojo">Ser una insensible que no se da cuenta de mis sentimientos y visiones por andar cegada en su mente, tal cual como me peleaste en el cumpleaños de mi sobrino</li>
+                        <li id="rojo">Una promesa es un "voto vinculante" que pone en balanza la confianza de ambos, tu eres experta en romperlas </li>
+                        
+                        
+                    </ul>
+                </div>
+
                 <a href="Meses pasados.xlsx" id="link">Descarga de meses anteriores</a>
             </div>`
         };
@@ -75,7 +109,7 @@
         function Tabla1() {
         document.getElementById("content").innerHTML = `
                 <div id="conttable">
-                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION SEPT</strong></label>
+                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION ENERO</strong></label>
                     <table border="2px">
                         <tr>
                             <th>DIA</th>
@@ -86,243 +120,102 @@
                             <th>ESTADO FINAL</th>
                         </tr>
                         <tr>
-                            <td><strong>1 SEPT</strong></td>
-                            <td>Enchiladas que hice con mamá</td>
+                            <td><strong>1 ENERO</strong></td>
                             <td>--</td>
-                            <td>Frijoles con salsa sobrante</td>
-                            <td>Semitas</td>
-                            <td><strong>Bien</strong></td>
+                            <td>Comimos el recalentado de ayer</td>
+                            <td>Churro con salsa que hizo Josef</td>
+                            <td>Unas tortillas con jamon y luego en el carnaval una granita y luego una orden de pupusas</td>
+                            <td><strong>Super lleno</strong></td>
                         </tr>
-                        <tr>
-                            <td><strong>2 SEPT</strong></td>
-                            <td>Pollo hecho en la freidora por papá</td>
+                          <tr>
+                            <td><strong>2 ENERO</strong></td>
+                            <td>Mamá hizo unas tortillas fritas con carnita del recalentado y una ensaladita</td>
                             <td>--</td>
-                            <td>Licuado de sandia y banano</td>
-                            <td>Churro</td>
-                            <td><strong>Muy bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>3 SEPT</strong></td>
-                            <td>Hice tortillas con salsa</td>
-                            <td>Licuado de sandia y banano</td>
-                            <td>Lo mismo del almuerzo</td>
-                            <td>Semitas</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>4 SEPT</strong></td>
-                            <td>papá hizo webo en torta, frijokes y arroz</td>
-                            <td>--</td>
-                            <td>Lo que sobraba de tortillas ensalsadas</td>
-                            <td>Licuado de sandia y minimo</td>
-                            <td><strong>Muy bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>5 SEPT</strong></td>
-                            <td>Hice pollo a mi estilo, junto con arroz y frijoles</td>
-                            <td>Semitas</td>
-                            <td>Un poco de pollo que sobró arroz</td>
-                            <td>--</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>6 SEPT</strong></td>
-                            <td>Papá hizo arroz, frijoles y webo estrellado</td>
-                            <td>--</td>
-                            <td>Baleadas caseras</td>
-                            <td>Semitas</td>
-                            <td><strong>Muy bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>7 SEPT</strong></td>
-                            <td>Mamá hizo una "sopa" de verduras y arroz</td>
-                            <td>Pan bimbo con cafe</td>
-                            <td>Hice mas arroz y me lo comi con la sopa sobrante</td>
-                            <td>2 charamuscas de leche</td>
+                            <td>Hice unas baleadas</td>
+                            <td>Semitas con café</td>
                             <td><strong>Muy lleno</strong></td>
                         </tr>
-                        <tr>
-                            <td><strong>8 SEPT</strong></td>
-                            <td>Fuimos a comer a Comayagua, especificamente chuleta</td>
-                            <td>--</td>
-                            <td>Webo y pan molde con queso</td>
+                          <tr>
+                            <td><strong>3 ENERO</strong></td>
+                            <td>Compraron una pizza de papizza</td>
+                            <td>Fui a tomar un cafe con mis amigas</td>
+                            <td>Comi lo ultimo que quedaba de pantorreja y un pedazo de pizza adicional</td>
                             <td>--</td>
                             <td><strong>Muy bien</strong></td>
                         </tr>
-                        <tr>
-                            <td><strong>9 SEPT</strong></td>
-                            <td>Unos tacos que dejaron por ahi (estaban feos)</td>
+                          <tr>
+                            <td><strong>4 ENERO</strong></td>
                             <td>--</td>
-                            <td>Cereal</td>
+                            <td>Fuimos a comer una parrillada por el cumpleaños de papá</td>
+                            <td>Me hice unas baleadas</td>
+                            <td>--</td>
+                            <td><strong>Lleno</strong></td>
+                        </tr>
+                          <tr>
+                            <td><strong>5 ENERO</strong></td>
+                            <td>Mamá hizo un pollo con arroz y frjoles, ademas una carnita que quedó de ayer</td>
+                            <td>Churrp</td>
+                            <td>Frijoles con salsa</td>
+                            <td>--</td>
+                            <td><strong><Lleno/strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>6 ENERO</strong></td>
+                            <td>Hice una carne en el asador y mamá hizo un arroz y frijoles po rel cumple de papá</td>
+                            <td>Pastel 3 leches</td>
+                            <td>Tambien otro pedazo de pastel y algunas uvas</td>
                             <td>--</td>
                             <td><strong>Bien</strong></td>
                         </tr>
-                        <tr>
-                            <td><strong>10 SEPT</strong></td>
-                            <td>Frijoles</td>
-                            <td>Jugo de sandia</td>
-                            <td>Josef me hizo la cena: frijoles webo</td>
-                            <td>-</td>
-                            <td><strong>Muy bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>11 SEPT</strong></td>
-                            <td>Sardinas y arroz</td>
-                            <td>Galletas de soda con salsa y jugo de sandia</td>
-                            <td>Cafe con pan y una galleta de soda</td>
-                            <td>--</td>
-                            <td><strong>Deficiente</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>12 SEPT</strong></td>
-                            <td>Hice pasta</td>
-                            <td>Galleta con salsa</td>
-                            <td>Pan con cafe</td>
-                            <td>--</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>13 SEPT</strong></td>
-                            <td>La pasta que sobró de ayer</td>
-                            <td>Tambien galleta con salsa</td>
-                            <td>Una carnita que me trajonjosef y frijoles</td>
-                            <td>Pan</td>
-                            <td><strong>Aceptable</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>14 SEPT</strong></td>
-                            <td>Cuando llegue a comayagua comimos una parridad con mis padres</td>
-                            <td>Una ensalada de papas que venia con un pollo que llevé</td>
-                            <td>Cereal</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>15 SEPT</strong></td>
-                            <td>Las sobras de la carne de ayer mas un pollo que llevé el mismo dia y arroz, frioles licuados que hice</td>
-                            <td>--</td>
-                            <td>Webo y frijoles</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>16 SEPT</strong></td>
-                            <td>La hamburguesa en tu casa mas el café</td>
-                            <td>Pan</td>
-                            <td>Galleta con salsa ranchera mas nestum</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>17 SEPT</strong></td>
-                            <td>Hice pollito y arroz</td>
-                            <td>Pan</td>
-                            <td>Lo mismo de la tarde y Nestum</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>18 SEPT</strong></td>
-                            <td>Comi en la colonia con mis papas, especificamentea arroz chino con fajitas y ensalada de papas</td>
-                            <td>--</td>
-                            <td>Josef nos llevo a comer afuera por el dia del maestro, comimos tacos mexicanos</td>
-                            <td>Nestum</td>
-                            <td><strong> Muy lleno</strong></td>
+                         <tr>
+                            <td><strong></strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
                         </tr>
                          <tr>
-                            <td><strong>19 SEPT</strong></td>
-                            <td>Mamá me trajo unos hotdogs de no se donde</td>
-                            <td>--</td>
-                            <td>sin datos</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>20 SEPT</strong></td>
-                            <td>Mis papas me dieron halon a cane asi que comimos afuera en matambritas (estan mejores las de bigos)</td>
-                            <td>--</td>
-                            <td>Mama le llevó pizza a Alex pero tambien comi de ahí</td>
-                            <td>Nestum</td>
-                            <td><strong>Muy lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>21 SEPT</strong></td>
-                            <td>Fui al dentista y luego comimos las de bigos</td>
-                            <td>--</td>
-                            <td>Webo, frijoles</td>
-                            <td>Nestum</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>22 SEPT</strong></td>
-                            <td>Mamá hizó arroz, frijoles, pollito de pollomaster y con tajaditas cona salsa</td>
-                            <td>--</td>
-                            <td>Solo el Nestum creo</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
+                            <td><strong></strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
                         </tr>
                          <tr>
-                            <td><strong>23 SEPT</strong></td>
-                            <td>comi un pollo que habia hecho y nadie se lo come</td>
-                            <td>--</td>
-                            <td>1 taco que dejaron ahi</td>
-                            <td>Nestum</td>
-                            <td><strong>Muy lleno</strong></td>
+                            <td><strong></strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
                         </tr>
                          <tr>
-                            <td><strong>24 SEPT</strong></td>
-                            <td>Hice carne molida, frijoles con queso y me comi unos pedazitos de carne de por ahi</td>
-                            <td>--</td>
-                            <td>Tambien hice arroz en la tarde y la carne que sobro de la tarde</td>
-                            <td>Nestum</td>
-                            <td><strong>Muy lleno</strong></td>
+                            <td><strong></strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
                         </tr>
                          <tr>
-                            <td><strong>25 SEPT</strong></td>
-                            <td>Carnita de ayer con arroz y sardinas</td>
-                            <td>--</td>
-                            <td>Galleta con salsa y Nestum</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
+                            <td><strong></strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
                         </tr>
                          <tr>
-                            <td><strong>26 SEPT</strong></td>
-                            <td>Sin datos</td>
-                            <td>Sin datos</td>
-                            <td>Sin datos</td>
-                            <td>Nestum</td>
-                            <td><strong>Sin datos</strong></td>
+                            <td><strong></strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
                         </tr>
-                         <tr>
-                            <td><strong>27 SEPT</strong></td>
-                            <td>Me hice unos hot dogs caseros</td>
-                            <td>Galleta</td>
-                            <td>Un pollo que dejaron en la refri y frijoles</td>
-                            <td>Nestum</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>28 SEPT</strong></td>
-                            <td>Como no habia luz Josef me pidio unos chiaquiles</td>
-                            <td>1 pedazo de pizza que sobró y una galleta</td>
-                            <td>Webito y frijoles</td>
-                            <td>Nestum</td>
-                            <td><strong>Muy lleno</strong></td>
-                        </tr>
-                         <td><strong>29 SEPT</strong></td>
-                            <td>Me hice unas tortillas con queso derretido y algo de fijoles</td>
-                            <td>--</td>
-                            <td>Mi hermano hizo un arroz con camarones que estuve esperando desde la mañana</td>
-                            <td>Nestum</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                         <td><strong>30 SEPT</strong></td>
-                            <td>Me hice unos sandwiches caseros</td>
-                            <td>--</td>
-                            <td><webo y arroz</td>
-                            <td>Nestum</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
+
                     </table>
                 </div>`
         };
@@ -330,7 +223,7 @@
         function Tabla2(){
             document.getElementById("content").innerHTML = `
                 <div id="conttable2">
-                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION OCTUBRE</strong></label>
+                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION FEBRERO</strong></label>
                     <table border="2px">
                         <tr>
                             <th>DIA</th>
@@ -341,244 +234,14 @@
                             <th>ESTADO FINAL</th>
                         </tr>
                         <tr>
-                            <td><strong>1 OCTUBRE</strong></td>
-                            <td>Le ayudé a mamá a jacer unas enchiladas</td>
-                            <td>--</td>
-                            <td>Un poco de carne que sobró y tambien me hice unos frijoles con arroz</td>
-                            <td>Nestum</td>
-                            <td><strong>Lleno</strong></td>
+                            <td><strong>1 FEBRERO</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
                         </tr>
-                        <tr>
-                            <td><strong>2 OCTUBRE</strong></td>
-                            <td>Salimos a comer y yo pedí chuleta...</td>
-                            <td>--</td>
-                            <td>"Pan de pan"</td>
-                            <td>Nestum y luego en la feria un chocolate con guaro</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>3 OCTUBRE</strong></td>
-                            <td>Mamá hizo frijoles webo estrellado y arroz</td>
-                            <td>Pan</td>
-                            <td>Hice baleadas</td>
-                            <td>Nestum</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>4 OCTUBRE</strong></td>
-                            <td>Fuimos a rancho sofia y yo comí un sandwich cubano</td>
-                            <td>--</td>
-                            <td>En la refri dejaron unas tajadas asi que las comí con salsa y queso</td>
-                            <td>Nestum</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>5 OCTUBRE</strong></td>
-                            <td>Le ayudé a mamá a hacer enchiladas</td>
-                            <td>--</td>
-                            <td>Hice frijoles e Irma hizó frijoles con webo y platano</td>
-                            <td>Grabita</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>6 OCTUBRE</strong></td>
-                            <td>Mamá e Irma hicieron pollo ensalsado con ensalada y tajadas</td>
-                            <td>--</td>
-                            <td>Arroz y sardinas</td>
-                            <td>Jugo</td>
-                            <td><strong>Muy lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>7 OCTUBRE</strong></td>
-                            <td>La dona y la hamburguesa que me diste</td>
-                            <td>--</td>
-                            <td>Sopa magi y galleta con salsa</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr><tr>
-                            <td><strong>8 OCTUBRE</strong></td>
-                            <td>Pollo y arroz que dejaron por ahi</td>
-                            <td>--</td>
-                            <td>Nada</td>
-                            <td>--</td>
-                            <td><strong>Deficiente</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>9 OCTUBRE</strong></td>
-                            <td>Josef compró pupusas</td>
-                            <td>--</td>
-                            <td>Frijoles</td>
-                            <td>--</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>10 OCTUBRE</strong></td>
-                            <td>Un pollo que dejaron y un arroz ya hecho, ademas me hice un webo</td>
-                            <td>--</td>
-                            <td>Pollo que me trajó mamá</td>
-                            <td>Dona que trajo mamá</td>
-                            <td><strong>Super lleno</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>11 OCTUBRE</strong></td>
-                            <td>Baleada en la mañana</td>
-                            <td>Té que vomite</td>
-                            <td>Cereal</td>
-                            <td>--</td>
-                            <td><strong>Deficiente(me sentia lleno)</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>12 OCTUBRE</strong></td>
-                            <td>--</td>
-                            <td>Sopa instantanea</td>
-                            <td>Frijoles con platano</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>13 OCTUBRE</strong></td>
-                            <td>Josef me compró una carnita de torofuego y juego</td>
-                            <td>--</td>
-                            <td>Webo y pan molde con queso derretido</td>
-                            <td>Galleta</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>14 OCTUBRE</strong></td>
-                            <td>Hice pasta</td>
-                            <td>--</td>
-                            <td>Vinieron mis papas y trajeron pizza</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>15 OCTUBRE</strong></td>
-                            <td>2 pedazos de pizza y la pasta de ayer</td>
-                            <td>--</td>
-                            <td>Webo y frijoles</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>16 OCTUBRE</strong></td>
-                            <td>Unas sobras que dejaron de varias comidas y tambien hice paas hervidas y frijoles</td>
-                            <td>--</td>
-                            <td>Sandwich casero</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>17 OCTUBRE</strong></td>
-                            <td>Pan de queso</td>
-                            <td>--</td>
-                            <td>Josef me compró una burrita</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>18 OCTUBRE</strong></td>
-                            <td>Webo con tortilla y quesillo</td>
-                            <td>--</td>
-                            <td>Nacatamal que trajo Josef</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>19 OCTUBRE</strong></td>
-                            <td>Nada</td>
-                            <td>Pizza que compré</td>
-                            <td>Pizza</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>20 OCTUBRE</strong></td>
-                            <td>En la mañana 2 pedazos de pizza de ayer, en cane tambien pizza que compraron</td>
-                            <td>Pastel</td>
-                            <td>--</td>
-                            <td>Pan</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>21 OCTUBRE</strong></td>
-                            <td>Lasaña que me diste y frijoles con queso</td>
-                            <td>--</td>
-                            <td>1 pedazo de pollo y fresco</td>
-                            <td>Té de jengibre</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>22 OCTUBRE</strong></td>
-                            <td>Un pollo</td>
-                            <td>--</td>
-                            <td>Baleadas desnutridas</td>
-                            <td>--</td>
-                            <td><strong>Deficiente</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>23 OCTUBRE</strong></td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td><strong>Sin datos</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>24 OCTUBRE</strong></td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td><strong>Sin datos</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>25 OCTUBRE</strong></td>
-                            <td>Solo quesadillas</td>
-                            <td>Un café y un postre cuando salí con Dulce</td>
-                            <td>Frijoles con carne molida</td>
-                            <td>Churro</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>26 OCTUBRE</strong></td>
-                            <td>Pollo y arroz con ensalada</td>
-                            <td>--</td>
-                            <td>Tacos que compraron</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>27 OCTUBRE</strong></td>
-                            <td>Ayude a mamá a hacer ensalada con yajadas y pollo</td>
-                            <td>--</td>
-                            <td>Quesadillas y café</td>
-                            <td>Pollo</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>28 OCTUBRE</strong></td>
-                            <td>Mi hermano compró unos tacos el dia anterior pero me los comí hasta hoy</td>
-                            <td>Pan</td>
-                            <td>Sopa magi</td>
-                            <td>--</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        </tr><tr>
-                            <td><strong>29 OCTUBRE</strong></td>
-                            <td>Hice sandwiches caseros</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td><strong>Hambriento</strong></td>
-                        </tr>
-                         </tr><tr>
-                            <td><strong>30 OCTUBRE</strong></td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td><strong>Sin datos</strong></td>
-                        </tr>
+                       
                     </table>
                 </div>`
         };
@@ -586,7 +249,7 @@
          function Tabla3() {
                 document.getElementById("content").innerHTML = `
                 <div id="conttable3">
-                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION NOVIEMBRE</strong></label>
+                    <label for=""><strong>BITACORA DE LAS MAMADAS QUE COMO TODOS LOS DIAS, EDICION MARZO</strong></label>
                     <table border="2px">
                         <tr>
                             <th>DIA</th>
@@ -597,250 +260,19 @@
                             <th>ESTADO FINAL</th>
                         </tr>
                         <tr>
-                            <td><strong>1 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Lo que me dió tu hermana en la casa</td>
-                            <td>Cereal</td>
-                            <td>--</td>
-                            <td><strong>Bien</strong></td>
+                            <td><strong>1 MARZO</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong></strong></td>
                         </tr>
-                         <tr>
-                            <td><strong>2 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Irma me dió una torta de frijoles y etc</td>
-                            <td>Frijoles y pollo</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>3 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Hamburguesa en la cita</td>
-                            <td>Tortillas con quesillo, webo y algo de pollo</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>4 NOVIEMBRE</strong></td>
-                            <td>Coditos</td>
-                            <td>--</td>
-                            <td>Webo</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>5 NOVIEMBRE</strong></td>
-                            <td>Sardinas y arroz</td>
-                            <td>--</td>
-                            <td>Frijoles, unas papas, arroz y pollo</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>6 NOVIEMBRE</strong></td>
-                            <td>Baleadas caseras</td>
-                            <td>Churro</td>
-                            <td>Cereal</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>7 NOVIEMBRE</strong></td>
-                            <td>Frijoles</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>Tamalitos</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>8 NOVIEMBRE</strong></td>
-                            <td>Espaguetty</td>
-                            <td>Espaguetty de nuevo</td>
-                            <td>Cereal</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>9 NOVIEMBRE</strong></td>
-                            <td>Tamalitos</td>
-                            <td>Irma me compró una baleada</td>
-                            <td>Me hice un webo con pan molde tostado</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>10 NOVIEMBRE</strong></td>
-                            <td>Una baleada que dejaron por ahi</td>
-                            <td>--</td>
-                            <td>Tamalitos</td>
-                            <td>--</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>11 NOVIEMBRE</strong></td>
-                            <td>Tamalitos creo</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>Cereal</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>12 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Sandwiches caseros</td>
-                            <td>Frijoles</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>13 NOVIEMBRE</strong></td>
-                            <td>Churro con salsa</td>
-                            <td>Sardinas y arroz</td>
-                            <td>--</td>
-                            <td>Un tamalito</td>
-                            <td><strong>Hambriento</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>14 NOVIEMBRE</strong></td>
-                            <td>Churro con salsa</td>
-                            <td>Coditos</td>
-                            <td>Coditos</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>15 NOVIEMBRE</strong></td>
-                            <td>Webo y pan tostado antes de que llegaras</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>Cereal</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>16 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Josef me compró unas pupusas que estaban super deliciosas</td>
-                            <td>--</td>
-                            <td>Me hice una carne en la freidora, frijoles y junto un arroz que habia cené</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>17 NOVIEMBRE</strong></td>
-                            <td>Josef me dejó un webo y platano en la mañana</td>
-                            <td>--</td>
-                            <td>Comi tremenda comida con unas tajadas que dejaron en la refri, un tamalito y me hice unos frijoles</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>18 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Me hice unas tortas con webo, frijoles, platano, queso derretido y chile (Delicioso)</td>
-                            <td>--</td>
-                            <td>Josef me trajo baleadas desnutridas</td>
-                            <td><strong>Muy bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>19 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Comi bien tarde, carne, arroz, papa a modo de puré y frijoles licuados sobrantes</td>
-                            <td>Nada</td>
-                            <td>--</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>20 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Sandwiches caseros</td>
-                            <td>--</td>
-                            <td>Cereal</td>
-                            <td><strong>Muy bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>21 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Coditos que hice evidentemente</td>
-                            <td>--</td>
-                            <td>Coditos</td>
-                            <td><strong>Muy bien</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>22 NOVIEMBRE</strong></td>
-                            <td>Almorcé donde abuela y me dió una chuleta con frijoles y luego un poco de arroz chino que no se comió</td>
-                            <td>Pastel de chocolate qe¿ue me dió abuela</td>
-                            <td>--</td>
-                            <td>Comi tarde algo de arroz y sardinas con algo de pasta que sobró</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>23 NOVIEMBRE</strong></td>
-                            <td>Un poco de frijoles y con arroz y hot dogs</td>
-                            <td>2 donas que me trajeron mi padres</td>
-                            <td>Nada</td>
-                            <td>--</td>
-                            <td><strong>Hambriento</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>24 NOVIEMBRE</strong></td>
-                            <td>Irma hizo panqueques en la mañana</td>
-                            <td>Josef me compró unso tacos</td>
-                            <td>Cereal</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>25 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Hice coditos</td>
-                            <td>Coditos de la tarde</td>
-                            <td>--</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>26 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Pan e hice un pollito con arroz y comi bien tarde</td>
-                            <td>Sopa instantanea</td>
-                            <td>--</td>
-                            <td><strong>Bien</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>27 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Comi un poco de pollo de ayer y arroz</td>
-                            <td>--</td>
-                            <td>Baleadas caseras</td>
-                            <td><strong>Satisfecho</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>28 NOVIEMBRE</strong></td>
-                            <td>Una lata de sardinas con 4 tortillas y una carne que hice en la freidora</td>
-                            <td>Tambien me comí un batido proteinico con avena, granola, leche</td>
-                            <td>--</td>
-                            <td>Sopa magi</td>
-                            <td><strong>Muy lleno</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>29 NOVIEMBRE</strong></td>
-                            <td>--</td>
-                            <td>Comi re tarde en cane un pedazo de pollo, arroz y 1 pedazo de pizza que mamá me dejó</td>
-                            <td>Churro</td>
-                            <td>Frijoles con encurtido con fresco</td>
-                            <td><strong>Lleno</strong></td>
-                        </tr>
-                         <tr>
-                            <td><strong>30 NOVIEMBRE</strong></td>
-                            <td>Sin datos</td>
-                            <td>--</td>
-                            <td>Sin datos</td>
-                            <td>--</td>
-                            <td><strong>--</strong></td>
-                        </tr>
+                        
                          
                     </table>
                 </div>`
         };
-        /*----------------------------------------------------------------------------------------------------------------*/
+        /*-----------------------------------------------------------------------------------CORAZONES---------------------------------*/
 
         function Corazones() {
             document.getElementById("content").innerHTML = `
@@ -848,17 +280,17 @@
                     <label for=""><strong>CORAZONES!</strong></label>
                     <table id="tablaC"></table>
                     <div id="pie">
-                        <button onclick="corajul()" id="botoncorazon1"><strong>Julio</strong></button>
-                        <button onclick="coragost()" id="botoncorazon1"><strong>Agosto</strong></button>
-                        <button onclick="corasept()" id="botoncorazon1"><strong>Septiembre</strong></button>
-                        <button onclick="coraoct()" id="botoncorazon1"><strong>Octubre</strong></button>
-                        <button onclick="coranov()" id="botoncorazon1"><strong>Nov</strong></button>
+                        <button onclick="cora1()" class="botoncorazon1"><strong>Enero</strong></button>
+                       <!-- <button onclick="cora()" class="botoncorazon1"><strong>Agosto</strong></button>
+                        <button onclick="cora()" class="botoncorazon1"><strong>Septiembre</strong></button>
+                        <button onclick="cora()" class="botoncorazon1"><strong>Octubre</strong></button>
+                        <button onclick="cora()" class="botoncorazon1"><strong>Nov</strong></button> -->
                     </div>
                 </div>`
 
         };
                  corajul();
-                    function corajul(){
+                    function cora1(){
                             document.getElementById("tablaC").innerHTML = `
                         <table>
                                 <tr>
@@ -872,52 +304,52 @@
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td>1</td>
-                                    <td>2</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="pi">1</td>
+                                    <td class="pi">2</td>
                                     <td>3</td>
                                     <td class="pi">4</td>
-                                    <td class="pi">5</td>
-                                    <td>6</td>
                                 </tr>
                                 <tr>
+                                    <td class="pi">5</td>
+                                    <td>6</td>
                                     <td>7</td>
                                     <td>8</td>
                                     <td>9</td>
                                     <td>10</td>
                                     <td>11</td>
-                                    <td>12</td>
-                                    <td class="pi">13 </td>
                                 </tr>
                                 <tr>
+                                    <td>12</td>
+                                    <td>13</td>
                                     <td>14</td>
-                                    <td class="po">15</td>
+                                    <td>15</td>
                                     <td>16</td>
                                     <td>17</td>
                                     <td>18</td>
-                                    <td class="pi">19</td>
-                                    <td>20</td>
                                 </tr>
                                 <tr>
-                                    <td class="pi">21</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
                                     <td>22</td>
                                     <td>23</td>
                                     <td>24</td>
                                     <td>25</td>
-                                    <td>26</td>
-                                    <td class="po">27</td>
                                 </tr>
                                 <tr>
-                                    <td class="po">28</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
                                     <td>29</td>
-                                    <td class="po">30</td>
+                                    <td>30</td>
                                     <td>31</td>
-                                    <td></td>
-                                    <td></td>
                                     <td></td>
                                 </tr>
                             </table>`
                     };
-                    function coragost(){
+                    function cora2(){
                             document.getElementById("tablaC").innerHTML = `
                         <table>
                                 <tr>
@@ -976,7 +408,7 @@
                                 </tr>
                             </table>`
                     };
-                    function corasept(){
+                    function cora3(){
                             document.getElementById("tablaC").innerHTML = `
                         <table>
                                 <tr>
@@ -1035,7 +467,7 @@
                                 </tr>
                             </table>`
                         };
-                        function coraoct(){
+                        function cora4(){
                             document.getElementById("tablaC").innerHTML = `
                             <table>
                                 <tr>
@@ -1095,7 +527,7 @@
                             </table>`
                     };
                     corajul();
-                    function coranov(){
+                    function cora5(){
                             document.getElementById("tablaC").innerHTML = `
                         <table>
                                 <tr>
@@ -1154,7 +586,7 @@
                                 </tr>
                             </table>`
                     };
-        /*-----------------------------------------------------------------------------------------------------------*/
+        /*----------------------------------------------------------------------------------ESTADO----------------------------------------*/
         function Estado() {
             document.getElementById("content").innerHTML = `
             <div id="Estado">
@@ -1210,7 +642,77 @@
                         <td>Super agotado mentalmente, asqueado por ir en la mañana</td>
                         <td>Normal</td>
                     </tr>
+                    <tr>
+                        <td>2-15 DIC</td>
+                        <td>Terminando las clases y sintiendome menos atrofiado mentalmente</td>
+                        <td>Mas femboy</td>
+                    </tr>
+                    <tr>
+                        <td>2-7 ENERO</td>
+                        <td>Muy perverso y bastante deseoso</td>
+                        <td>Cansado y con algo de sueño</td>
+                    </tr>
+                   
                 </table>
+            </div>`
+        };
+        function Anime() {
+            document.getElementById("content").innerHTML = `
+            <div id="Anime">
+                <div id="conttop">
+                    <label for="">TOP 3 MEJORES ANIMES VISTOS</label>
+                    <div id="tops">
+                        <div><strong>Rakudai kishi no cavalry</strong></div>
+                        <div><strong>No game no life</strong></div>
+                        <div><strong>Black clover</strong></div>
+                    </div>
+                </div>
+
+                <div id="detallado">
+                    <div id="uno"></div><figcaption>Rakudai kishi no cavalry es un anime con una trama sencila que consiste en un tipo considerado el mayor perdedor pero resulta que en realidad no es tan perdedor y la trama lo sigue en sus metas y va escalando puestos hasta llegar a la final de un torneo; es una trama simple pero bien contada y personalmente le tengo bastante nostalgia</figcaption>
+                    <div id="dos"></div><figcaption>No game no life es una magnificencia en toda la palabra, 2 hermanos que son los mejores en cualquier juego son transportados a otro mundo por el dios del mundo en donde los juegos lo son TODO, se puede obtener y lograr TODO, inclusive convertirse en dios; cuenta con una trama suspensiva que te mantiene pegado a la pantalla a espera de la jugada que haran para llegar a la cima</figcaption>
+                    <div id="tres"></div><figcaption>Black clover, un shonen muy marcado y clasico que tiene el mejpr desarrollo de personajes y trama en su respectivo mundo, niveles de poderes reales y cada personaje cuenta con una historia detras que nos la cuentan en el transcurso de los episodios; a pesar de ser algo generico donde un chico quiere ser el rey mago pero con la condicion que no puede usar nada de magia me parece de los mejores shonen que haya visto hasta el momento</figcaption>
+                </div>
+
+                <div id="contlista">
+                    <label for="">MENCIONES HONORIFICAS</label><br>
+                    <ul>
+                        <li><strong>Baka to test to shoukanju</strong> Mejor anime de comedia</li><div class="preview" id="preview1"><div></div></div>
+                        <li><strong>Sousou no Frieren</strong> Una carta de amor al arte</li><div class="preview" id="preview2"><div></div></div>
+                        <li><strong>Saga de Fate stay night</strong> La mejor animacion/dibujo y sonidos de todos los tiempos</li><div class="preview" id="preview3"><div></div></div>
+                        <li><strong>Karakai Jouzu no Takagi-san</strong> Primer y mejor anime de romace</li><div class="preview" id="preview4"><div></div></div>
+                        <li><strong>Shimoneta</strong> Anime mas pervertido que haya visto</li><div class="preview" id="preview5"><div></div></div>
+                        <li><strong>Mushoku tensei</strong> Best anime de magia ever</li><div class="preview" id="preview6"><div></div></div>
+                        <li><strong>Your lie in april</strong> Uno de los animes existentes mas tristes pero bonitos</li><div class="preview" id="preview7"><div></div></div>
+                        <li><strong>Re:zero</strong> Un isekai muy duro de ver pero a la vez entretenido</li><div class="preview" id="preview8"><div></div></div>
+                    </ul>
+                </div>
+
+                <div id="contotros">
+                    <label for="">OTROS</label><br>
+                    <ul>
+                        <li><strong>Gakusen toshi asterisk</strong></li>
+                        <li><strong>Tower of god</strong> Chulada de anime</li>   
+                        <li><strong>Kaifuku Jutsushi no Yarinaoshi</strong> Me sacó de onda con las atrocidades vistas</li>
+                        <li><strong>Wistoria and sword</strong> En un futuro puede ser una joyita escondida</li>
+                        <li><strong>Maou 2099</strong> Una joven promesa innovadora para el anime</li>
+                        <li><strong>Hametsu no okuoko</strong></li>
+                        <li><strong>Tensei Shitara Dai Nana Ouji Datta</strong> Femboy muslon que me quiero coger</li>
+                        <li><strong>Overlord</strong></li>
+                        <li><strong>Trinity seven</strong> Nostalgia pura</li>
+                        <li><strong>Mahouka koukou no rettousei</strong></li>
+                        <li><strong>Danmachi</strong></li>
+                        <li><strong>Toaru majutsu no index</strong></li>
+                        <li><strong>Watamote</strong> El anime de la exclusion social mas realista que hay</li>
+                        <li><strong>Charlotte</strong></li>
+                        <li><strong>Plunderer</strong></li>
+                        <li><strong>Record of ragnarok</strong></li>
+                        <li><strong>Shangri-la</strong> una especie de SAO, pero mucho mejor</li>
+                        <li><strong>Saikyou no shienshoku</strong></li>
+                        <li><strong>The eminence in shadow</strong></li>
+                        <li><strong>Classroom of the elite</strong> the goat de anime psicologico-suspenso</li>
+                    </ul>
+                </div>
             </div>`
         };
 </script>
@@ -1218,3 +720,78 @@
 
 </body>
 </html>
+
+
+
+<!----
+<tr>
+    <td>15 DIC- 12 ENERO</td>
+    <td>Super relajado mentalmente de haber pasado todas las clases y disfrutando las vacaciones</td>
+    <td>Algunos dias trabajé fisicamente</td>
+</tr>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+-->
