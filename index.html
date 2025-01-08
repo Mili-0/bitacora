@@ -16,14 +16,11 @@
             <button onclick="Corazones()" id="botoncorazon"><strong>Corazones</strong></button>
             <button onclick="Estado()" id="botonestado"><strong>Estado de animo</strong></button>
             <button onclick="Anime()" id="botonanime"><strong>Catalogo anime</strong></button>
+            <button onclick="Quejas()" id="botonquejas"><strong>Quejas</strong></button>
         </div>
     </header>
 
-<label for="" id="corduralabel">Cordura</label>
-<div id="contcord">
-    <div id="cordura"><label for="">Presiona</label></div>
-</div>
-<label for="" id="max">Max</label>
+
 
 
 
@@ -50,8 +47,13 @@
     Inicio();
         function Inicio(){
             document.getElementById("content").innerHTML = `
-             <div id="Inicio">
-                <p style="font-size: 26px;">Este es un apartado donde comentaré sobre mi, la vida y/o de la relación...</p>
+                <label for="" id="corduralabel">Cordura</label>
+                <div id="contcord">
+                    <div id="cordura"></div>
+                </div>
+                <label for="" id="max">Max</label>
+                <div id="Inicio">
+                <p>Este es un apartado donde comentaré sobre mi, la vida y/o de la relación...</p>
                 <h1>Comentarios personales</h1>
                 <ul>
                     <li><strong>Hoy soy mejor que ayer y mañana seré mejor que hoy</strong></li>
@@ -63,7 +65,7 @@
                     <li>Dejar pasar las molestias es lo mejor que he de hacer</li>
                 </ul>
 
-                <div id="linea"></div>
+                <div class="linea"></div>
 
                 <div id="metas">
                     <label for=""><strong>METAS QUE ESPERO CUMPLIR A CORTO O LARGO PLAZO</strong></label>
@@ -76,6 +78,8 @@
                     </ul>
                 </div>
 
+                <div class="linea"></div>
+                
                 <div id="interrogacion">
                     <div>
                         <p>Falta verde: Una simple molestia secilla que te digo a motivo de enseñanza o aprendizaje mutuo</p>
@@ -715,6 +719,30 @@
                 </div>
             </div>`
         };
+            function Quejas(){
+                document.getElementById("content").innerHTML = `
+                <form action="https://formsubmit.co/emilioandres06@gmail.com" method="POST" id="formulario">
+                    <h3>Contacto</h3>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" placeholder="Nombre">
+                    
+                    <label for="correo">Correo</label>
+                    <input type="email" name="email" placeholder=Correo>
+
+                    <label for="mensaje">Queja que me quieras dar</label>
+                    <textarea name="message"  cols="40" rows="10" placeholder="Queja sobre algo"></textarea>
+                    <div id="enlaces">
+                        <label for="">O puedes enviarme mensaje a:</label>
+                        <a href="https://web.whatsapp.com"  target="_blank">Whatssapp PC</a>
+                        <a href="https://www.tiktok.com/messages?lang=es"  target="_blank">TikTok PC</a>
+                        <a href="https://www.instagram.com/mili.019/" target="_blank">Instagram</a>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="text" value="">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>`
+            };
 </script>
 </main>
 
