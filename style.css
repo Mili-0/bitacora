@@ -593,42 +593,42 @@ height: 70%;                              /*------------------------------------
 #preview1:hover :nth-child(n){
     background: url(images/bakatest.jpg) no-repeat center top;
     background-size: cover;
-    transform: translatex(200px) scale(10.0);
+    transform: translatex(100px) scale(10.0);
 }
 #preview2:hover :nth-child(n){
     background: url(images/sousou.jpg) no-repeat center center;
     background-size: cover;
-    transform: translatex(200px) scale(10.0);
+    transform: translatex(100px) scale(10.0);
 }
 #preview3:hover :nth-child(n){
     background: url(images/fate.jpg) no-repeat center center;
     background-size: cover;
-    transform: translatex(200px) scale(10.0);
+    transform: translatex(100px) scale(10.0);
 }
 #preview4:hover :nth-child(n){
     background: url(images/karakai.jpg) no-repeat center center;
     background-size: cover;
-    transform: translatex(200px) scale(10.0);
+    transform: translatex(100px) scale(10.0);
 }
 #preview5:hover :nth-child(n){
     background: url(images/shimoneta.jpg) no-repeat center top;
     background-size: cover;
-    transform: translatex(200px) scale(10.0);
+    transform: translatex(100px) scale(10.0);
 }
 #preview6:hover :nth-child(n){
     background: url(images/mushoku.jpg) no-repeat center center;
     background-size: cover;
-    transform: translatex(200px) scale(10.0);
+    transform: translatex(100px) scale(10.0);
 }
 #preview7:hover :nth-child(n){
     background: url(images/april.jpg) no-repeat center top;
     background-size: cover;
-    transform: translatex(200px) scale(10.0);
+    transform: translatex(100px) scale(10.0);
 }
 #preview8:hover :nth-child(n){
     background: url(images/rezero.jpg) no-repeat center center;
     background-size: cover;
-    transform: translatex(200px) scale(10.0);
+    transform: translatex(100px) scale(10.0);
 }
 
 /*--------------------------------------------------------------------------------otros animes------------------------------*/
