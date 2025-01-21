@@ -383,8 +383,8 @@ height: 70%;                              /*------------------------------------
     background-color: rgb(141, 22, 121);
     
 }
-.tu{
-    background-color: rgb(184, 21, 157);
+.es{
+    background-color: rgb(224, 64, 141);
     border-color: 2px solid blue;
     
 }
@@ -840,6 +840,13 @@ input[type="submit"]{
 }
 #Estado table tr{
     font-size: 8px;
+}
+
+#reglas ul{
+    font-size: 8px;
+}
+#reglas label{
+    font-size: 12px;
 }
 
 #Anime{
