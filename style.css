@@ -630,6 +630,11 @@ height: 70%;                              /*------------------------------------
     background-size: cover;
     transform: translatex(100px) scale(10.0);
 }
+#preview9:hover :nth-child(n){
+    background: url(images/kokoro.jpg) no-repeat center center;
+    background-size: cover;
+    transform: translatex(100px) scale(10.0);
+}
 
 /*--------------------------------------------------------------------------------otros animes------------------------------*/
 #contotros{
@@ -719,7 +724,7 @@ input[type="submit"]{
         font-size: 10px;
     }
     #encabezado{
-        width: 250px;
+        width: 450px;
         padding-left: 1px;
     }
     #encabezado button{
@@ -935,7 +940,7 @@ input[type="submit"]{
 #formulario{
     padding: 10px 20px;
     text-align: center;
-    margin-left: 0px;
+    margin-left: 100px;
     width: 200px;
 }
 #formulario h3{
