@@ -117,7 +117,7 @@ body{
 }
 #contcord:hover div:nth-of-type(1){
 background-color: rgb(47, 4, 4);
-height: 85%;                              /*------------------------------------------------------PORCENTAJE----------------------------*/
+height: 25%;                              /*------------------------------------------------------PORCENTAJE----------------------------*/
 
 }
 #max{
@@ -322,6 +322,43 @@ height: 85%;                              /*------------------------------------
 }
 #conttable3 table tr{
     background-color: rgba(134, 134, 135, 0.745);
+    border-left: 5px solid black;
+    border-bottom: 1px black;
+    font-size: 18px;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+#conttable4 label{
+    font-size: 24px;
+    color: rgb(172, 175, 177);
+    padding: 2px;
+    flex-direction: column;
+}
+#conttable4{
+    position: relative;
+    left: 50vmax;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    height: auto;
+    width: 1300px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+#conttable4 table{
+    width: 90%;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+#conttable4 table th{
+    background-color: rgb(38, 130, 86);
+}
+#conttable4 table tr{
+    background-color: rgba(19, 118, 98, 0.745);
     border-left: 5px solid black;
     border-bottom: 1px black;
     font-size: 18px;
@@ -817,6 +854,20 @@ input[type="submit"]{
     font-size: 10px;
 }
 #conttable3 table tr{
+    font-size: 8px;
+}
+#conttable4{
+    width: 700px;
+    left: 40vmax;
+}
+#conttable4 label{
+    font-size: 10px;
+    
+}
+#conttable4 table th{
+    font-size: 10px;
+}
+#conttable4 table tr{
     font-size: 8px;
 }
 
